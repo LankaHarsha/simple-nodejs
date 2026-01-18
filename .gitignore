@@ -27,3 +27,6 @@ npm-debug.log*
 # Build output
 dist/
 build/
+
+./*github_deploy_key
+./*github_deploy_key.pub
