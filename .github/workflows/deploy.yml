@@ -26,5 +26,5 @@ jobs:
             cd simple-nodejs
             git pull
             npm install
-            pm2 reload hello-node
+            pm2 reload simple-node
           EOF
