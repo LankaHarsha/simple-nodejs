@@ -12,7 +12,7 @@ permissions:
 env:
   PROJECT_ID: 'simple-nodejs-v2'
   REGION: 'us-central1' # Change this if you created your Artifact Registry in a different region (e.g., asia-south1)
-  REPO_NAME: 'github-pool' # Make sure this matches your Artifact Registry repository name
+  REPO_NAME: 'my-repo' # Make sure this matches your Artifact Registry repository name
   SERVICE_NAME: 'hello-node-service'
 
 jobs:
