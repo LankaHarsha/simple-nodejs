@@ -9,7 +9,7 @@ app.get('/', (req, res) => {
   console.log(`Worker ID ${workerId} is handling this request!`);
 
   // Send to browser
-  res.send(`Hello World! This is V2.`);
+  res.send(`Hello World! This is V3.`);
 });
 
 const PORT = process.env.PORT || 3000;
