@@ -6,7 +6,14 @@ const workerId = process.env.NODE_APP_INSTANCE || 0;
 
 app.get('/', (req, res) => {
   // Log to terminal (pm2 logs)
-  console.log(`Worker ID ${workerId} is handling this request!`);
+  console.log(JSON.stringify({
+    level: "info",
+    event: "request_received",
+    path: req.path,
+    method: req.method,
+    userAgent: req.headers["user-agent"],
+    timestamp: new Date().toISOString()
+  }));
 
   // Send to browser
   res.send(`Hello World! This is V3.`);
